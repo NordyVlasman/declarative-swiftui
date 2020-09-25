@@ -19,6 +19,9 @@ class ComponentViewController: ObservableObject {
             else if item.type == "list" {
                 uiComponents.append(ListComponent(rows: item.listRows!))
             }
+            else if item.type == "button" {
+                uiComponents.append(ButtonComponent(title: item.title))
+            }
         }
     }
 }

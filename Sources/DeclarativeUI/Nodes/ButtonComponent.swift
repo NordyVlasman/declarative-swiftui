@@ -1,5 +1,5 @@
 //
-//  TextComponent.swift
+//  File.swift
 //  
 //
 //  Created by Nordy Vlasman on 25/09/2020.
@@ -8,11 +8,11 @@
 import Foundation
 import SwiftUI
 
-protocol TextParams {
+protocol ButtonParams {
     var text: String { get set }
 }
 
-class TextComponent: UIComponent, TextParams {
+class ButtonComponent: UIComponent, ButtonParams {
     var text: String
     
     var uniqueID: UUID = UUID()
@@ -22,14 +22,18 @@ class TextComponent: UIComponent, TextParams {
     }
     
     func render(uiDelegate: UIDelegate) -> AnyView {
-        return TextViewComponent(text: text).anyView()
+        return ButtonViewComponent(text: text).anyView()
     }
 }
 
-struct TextViewComponent: View, TextParams {
+struct ButtonViewComponent: View, ButtonParams {
     var text: String
     
     var body: some View {
-        Text(text)
+        Button(action: {
+            print(text)
+        }, label: {
+            Text(text)
+        })
     }
 }
