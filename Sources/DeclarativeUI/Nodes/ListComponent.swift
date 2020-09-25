@@ -31,7 +31,13 @@ struct ListViewComponent: View, ListParams {
     
     var body: some View {
         List(rows, id: \.title) { row in
-            Text(row.title)
+            if row.action != nil {
+                NavigationLink(destination: Text(row.title), label: {
+                    Text(row.title)
+                })
+            } else {
+                Text(row.title)
+            }
         }
     }
 }
