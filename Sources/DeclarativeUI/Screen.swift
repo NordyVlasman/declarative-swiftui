@@ -7,23 +7,23 @@
 
 import Foundation
 
-struct Application: Decodable {
+public struct Application: Decodable {
     let screens: [Screen]
 }
 
-struct Screen: Decodable {
+public struct Screen: Decodable {
     let id: String
     let title: String
     let type: String
     let rows: [Row]
 }
 
-struct Row: Decodable, HasAction {
+public struct Row: Decodable, HasAction {
     let title: String
     var type: String?
     var action: Action? = nil
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: ActionCodingKeys.self)
         title = try container.decode(String.self, forKey: .title)
         type = try container.decodeIfPresent(String.self, forKey: .type)

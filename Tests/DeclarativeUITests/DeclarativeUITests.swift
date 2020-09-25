@@ -4,9 +4,9 @@ import XCTest
 final class DeclarativeUITests: XCTestCase {
     func testExample() {
         let url = URL(string: "http://localhost:8090/index.json")!
-        let declarativeUI = DeclarativeUI(url: url)
+        let declarativeUI = DeclarativeUI(dataURL: url)
             
-        declarativeUI.fetch() { screen in
+        declarativeUI.fetchData() { screen in
             XCTAssertEqual(screen.title, "Home")
         }
     }
