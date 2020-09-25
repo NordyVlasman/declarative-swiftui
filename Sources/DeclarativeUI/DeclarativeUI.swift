@@ -60,7 +60,10 @@ public func renderPage(ui: [UIComponent], uiDelegate: UIDelegate) -> AnyView {
         }.anyView()
 }
 
+@available(OSX 10.15, *)
 public class DeclarativeUI {
+    
+    @Published public var uiComponents: [UIComponent] = []
     
     private var screens = [String: Screen]()
     
