@@ -58,7 +58,7 @@ public func renderPage(ui: [UIComponent], uiDelegate: UIDelegate) -> AnyView {
         }.anyView()
 }
 
-public class DeclarativeUI {
+public class DeclarativeUI: ObservableObject {
     
     @Published public var uiComponents: [UIComponent] = []
     

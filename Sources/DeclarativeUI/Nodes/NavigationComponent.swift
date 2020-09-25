@@ -22,8 +22,6 @@ class NavigationComponent: UIComponent, NavigationParams {
     init(title: String, rows: [Row]) {
         self.title = title
         self.rows = rows
-        
-        print("Hello world")
     }
     
     func render(uiDelegate: UIDelegate) -> AnyView {
