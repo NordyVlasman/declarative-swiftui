@@ -7,17 +7,6 @@
 
 import Foundation
 
-public struct Application: Decodable {
-    let screens: [Screen]
-}
-
-public struct Screen: Decodable {
-    let id: String
-    let title: String
-    let type: String
-    let rows: [Row]
-}
-
 public struct Row: Decodable, HasAction {
     let title: String
     var type: String?
