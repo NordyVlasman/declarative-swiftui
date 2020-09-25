@@ -41,4 +41,5 @@ enum ActionCodingKeys: String, CodingKey {
     case type
     case actionType
     case action
+    case list
 }

@@ -16,6 +16,9 @@ class ComponentViewController: ObservableObject {
             if item.type == "text" {
                 uiComponents.append(TextComponent(title: item.title))
             }
+            else if item.type == "list" {
+                uiComponents.append(ListComponent(rows: item.listRows!))
+            }
         }
     }
 }
