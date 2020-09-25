@@ -86,8 +86,8 @@ public class DeclarativeUI {
     }
     
     public func loadScreen(screen: Screen) {
-        screen.rows.forEach { row in
-            
+        if screen.type == "navigationview" {
+            uiComponents.append(NavigationComponent(title: screen.title, rows: screen.rows))
         }
     }
 }
