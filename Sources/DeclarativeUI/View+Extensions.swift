@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-@available(OSX 10.15, *)
 extension View {
     func anyView() -> AnyView {
         return AnyView(self)

@@ -44,13 +44,11 @@ import SwiftUI
 //}
 public protocol UIDelegate {}
 
-@available(OSX 10.15, *)
 public protocol UIComponent {
     var uniqueID: UUID { get }
     func render(uiDelegate: UIDelegate) -> AnyView
 }
 
-@available(OSX 10.15, *)
 public func renderPage(ui: [UIComponent], uiDelegate: UIDelegate) -> AnyView {
     return
         VStack {
@@ -60,7 +58,6 @@ public func renderPage(ui: [UIComponent], uiDelegate: UIDelegate) -> AnyView {
         }.anyView()
 }
 
-@available(OSX 10.15, *)
 public class DeclarativeUI {
     
     @Published public var uiComponents: [UIComponent] = []
@@ -86,5 +83,11 @@ public class DeclarativeUI {
         }
         
         loadedHandler?(app.screens[0])
+    }
+    
+    public func loadScreen(screen: Screen) {
+        screen.rows.forEach { row in
+            
+        }
     }
 }

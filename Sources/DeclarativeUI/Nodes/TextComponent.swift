@@ -12,7 +12,6 @@ protocol TextParams {
     var text: String { get set }
 }
 
-@available(OSX 10.15, *)
 class TextComponent: UIComponent, TextParams {
     var text: String
     
@@ -27,7 +26,6 @@ class TextComponent: UIComponent, TextParams {
     }
 }
 
-@available(OSX 10.15, *)
 struct TextViewComponent: View, TextParams {
     var text: String
     

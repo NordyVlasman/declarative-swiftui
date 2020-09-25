@@ -7,7 +7,6 @@
 
 import Foundation
 
-@available(OSX 10.15, *)
 class ComponentViewController: ObservableObject {
     @Published var uiComponents: [UIComponent] = []
     
