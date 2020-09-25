@@ -87,6 +87,7 @@ public class DeclarativeUI {
     
     public func loadScreen(screen: Screen) {
         if screen.type == "navigationview" {
+            print("screen type is navigation view")
             uiComponents.append(NavigationComponent(title: screen.title, rows: screen.rows))
         }
     }
