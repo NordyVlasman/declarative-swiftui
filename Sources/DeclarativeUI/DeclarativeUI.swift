@@ -19,7 +19,7 @@ func renderPage(ui: [UIComponent], uiDelegate: UIDelegate) -> AnyView {
         }.anyView()
 }
 
-public struct DeclarativeUI {
+public class DeclarativeUI {
     var url: URL
     
     private var screens = [String: Screen]()
