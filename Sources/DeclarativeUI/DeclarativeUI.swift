@@ -45,7 +45,7 @@ public class DeclarativeUI: ObservableObject {
     }
     
     public func loadScreen(screen: Screen) {
-        if screen.type == "navigationview" {
+        if screen.type == Types.navigationview {
             uiComponents.append(NavigationComponent(title: screen.title, rows: screen.rows))
         }
     }

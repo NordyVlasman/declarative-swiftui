@@ -10,6 +10,6 @@ import Foundation
 public struct Screen: Decodable {
     let id: String
     let title: String
-    let type: String
+    let type: Types
     let rows: [Row]
 }

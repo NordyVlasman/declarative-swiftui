@@ -13,13 +13,13 @@ class ComponentViewController: ObservableObject {
     func getComponents(for row: [Row]) {
         uiComponents = []
         row.forEach { item in
-            if item.type == "text" {
+            if item.type == Types.text {
                 uiComponents.append(TextComponent(title: item.title))
             }
-            else if item.type == "list" {
+            else if item.type == Types.list {
                 uiComponents.append(ListComponent(rows: item.listRows!))
             }
-            else if item.type == "button" {
+            else if item.type == Types.button {
                 uiComponents.append(ButtonComponent(title: item.title))
             }
         }
