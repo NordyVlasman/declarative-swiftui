@@ -3,7 +3,7 @@ import XCTest
 
 final class DeclarativeUITests: XCTestCase {
     func testExample() {
-        let url = URL(string: "http://localhost:8090/index.json")!
+        let url = URL(string: "http://localhost:4000/application")!
         let declarativeUI = DeclarativeUI(dataURL: url)
             
         declarativeUI.fetchData() { screen in
