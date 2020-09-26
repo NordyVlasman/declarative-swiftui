@@ -10,7 +10,7 @@ final class DeclarativeUITests: XCTestCase {
             XCTAssertEqual(screen.title, "Home")
         }
     }
-
+    
     static var allTests = [
         ("testExample", testExample),
     ]

@@ -14,7 +14,6 @@ protocol ButtonParams {
 
 class ButtonComponent: UIComponent, ButtonParams {
     var text: String
-    
     var uniqueID: UUID = UUID()
     
     init(title: String) {
