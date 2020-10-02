@@ -1,3 +1,10 @@
+//
+//  DeclarativeUI.swift
+//
+//
+//  Created by Nordy Vlasman on 25/09/2020.
+//
+
 import Foundation
 import SwiftUI
 

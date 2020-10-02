@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Types.swift
 //  
 //
 //  Created by Nordy Vlasman on 26/09/2020.

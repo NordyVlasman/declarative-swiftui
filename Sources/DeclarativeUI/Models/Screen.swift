@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Screen.swift
 //  
 //
 //  Created by Nordy Vlasman on 25/09/2020.

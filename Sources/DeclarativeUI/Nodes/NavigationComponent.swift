@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  NavigationComponent.swift
 //  
 //
 //  Created by Nordy Vlasman on 25/09/2020.
