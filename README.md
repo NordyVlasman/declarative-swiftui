@@ -1,3 +1,5 @@
 # DeclarativeUI
 
-A description of this package.
+A SwiftUI package for creating UI using JSON.
+
+*Usage description is coming soon.*

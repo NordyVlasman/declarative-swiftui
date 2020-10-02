@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DeclarativeUI",
+        "repositoryURL": "https://github.com/NordyVlasman/declarative-swiftui.git",
+        "state": {
+          "branch": "master",
+          "revision": "85643e9a380cb7719623beed830122c79e926637",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
